@@ -1,0 +1,7 @@
+name: sratools_env
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - sra-tools

@@ -1,0 +1,12 @@
+name: phylogenetics_env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - mashtree=1.4.6
+  - figtree
+  - iqtree=2.4.0
+  - treetime
+  - mafft
+  - hyphy

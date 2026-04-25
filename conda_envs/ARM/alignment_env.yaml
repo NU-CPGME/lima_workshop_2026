@@ -1,0 +1,14 @@
+name: alignment_env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - htslib
+  - blast
+  - breseq
+  - bwa
+  - minimap2
+  - samtools
+  - bcftools
+  - csvlens
