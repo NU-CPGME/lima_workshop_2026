@@ -1,8 +1,8 @@
 name: assembly_env
 channels:
   - conda-forge
-  - nanoporetech
   - bioconda
+  - nanoporetech
   - defaults
 dependencies:
   - python>=3.12
