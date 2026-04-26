@@ -14,7 +14,6 @@ dependencies:
   - bandage_ng
   - medaka=2.2.0
   - dnaapler
-  - qt>=5.15
   - samtools>=1.18
   - bcftools>=1.18
   - htslib>=1.18

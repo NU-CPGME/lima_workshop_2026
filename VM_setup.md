@@ -6,8 +6,14 @@
 * Memory: 4096
 * Processors: 4
 * Storage: 50 GB
+* Installation Mode: Minimal Installation
 * Username: pathogen
 * Password: workshop
+
+```Shell
+sudo apt install gcc make perl
+reboot
+```
 
 ## 1B: ARM
 
@@ -31,13 +37,13 @@ reboot
 
 * In VirtualBox Host: Settings > General > Features > Shared Clipboard: Bidirectional
 * In VirtualBox Client: Devices > Insert Guest Additions CD Image...
-* In Lubuntu terminal (Intel/AMD): 
+* In Lubuntu terminal (**Intel/AMD**): 
 
     ```Shell
     sudo /media/pathogen/VBox_GAs_7.2.6/VBoxLinuxAdditions.run
     ```
 
-* In Lubuntu terminal (ARM): 
+* In Lubuntu terminal (**ARM**): 
 
     ```Shell
     sudo /media/pathogen/VBox_GAs_7.2.6/VBoxLinuxAdditions-arm64.run
@@ -85,6 +91,7 @@ rm rstudio-2026.04.0-daily-373-arm64.deb
 ## 6. Install R packages from terminal
 
 ```Shell
+sudo apt install libuv1-dev
 sudo Rscript -e 'install.packages(c("tidyverse", "ggsci", "ape", "RColorBrewer", "lubridate","ggpubr", "rlang", "BiocManager")); library(BiocManager); BiocManager::install(c("ggtree", "ggtreeExtra", "treeio"))'
 ``` 
 
